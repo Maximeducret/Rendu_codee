@@ -1,0 +1,191 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #f1f4f7;
+}
+.container{
+	margin: 0;
+	padding: 4%;
+	padding-right: 7%;
+	padding-left: 7%;
+	width: 86%;
+	display: flex;
+	flex-direction: row;
+}
+.inside_container_left{
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.inside_container_right{
+	width: 25%;
+}
+.container_2_main_box{
+	display: flex;
+	flex-direction: row;
+}
+#inside_text_mid{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.line{
+	border-top: 4px solid;
+	margin-bottom: 2%;
+	animation-name: animallline;
+	animation-duration: 2.5s;
+	animation-timing-function: easeInOutQuint;
+}
+.text {
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	font-size: 1.1vmax;
+}
+.presentation .text{
+	text-align: justify;
+}
+.align{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+p{
+	font-family: 'Helvetica';
+	font-weight: lighter;
+	font-size: 1.1vmax;
+	margin:0;
+	padding: 0;
+}
+.habilites_line{
+	border-top: 1px solid; 		
+}
+.line_h1{
+	width: 60%;
+	border-top: 4px solid;
+	margin-bottom: 0.5%;
+	animation-name: gogogo;
+	animation-duration: 2.5s;
+	animation-timing-function: easeInOutQuint;
+}
+@keyframes animallline{
+	0%{
+		width: 0%;
+		opacity: 0;
+		border-top: 1px solid;
+		padding-bottom: 3px;
+	}
+	100%{
+		width: 100%;
+		opacity: 1;
+		border-top: 4px solid;
+		padding-bottom: 0px;
+	}
+}
+@keyframes gogogo{
+	0%{
+		width: 0%;
+		opacity: 0;
+		border-top: 1px solid;
+		padding-bottom: 3px;
+	}
+	100%{
+		width: 60%;
+		opacity: 1;
+		border-top: 4px solid;
+		padding-bottom: 0px;
+	}
+}
+/* je sais faire des anims et des transitions, manque juste un peu de temps */
+
+
+h1{
+	margin: 0;
+	padding: 0;
+	font-size: 4vmax;
+	font-family: 'kiona bold';
+}/* DUCRET MAXIME */
+h2{
+	margin: 0;
+	padding: 0;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 2.3vmax;
+	font-family: 'kiona semibold';
+} /* Titre de mes parties ( Connaissances / Contact .... ) */
+h3{
+	margin: 0;
+	padding: 0;
+	font-size: 1.5vmax;
+	font-family: 'kiona semibold';
+} /* Graphic Designer */
+h4{
+	margin: 0;
+	padding: 0;
+	padding-top: 1%;
+	padding-bottom: 1.5%;
+	font-size: 1.5vmax;
+    font-family: 'kiona semibold';	
+} /* Titre sous partie ( Mini IA vocale / Jeu Global .... ) */
+a{
+	color: black;
+	text-decoration:none;
+}
+
+/* 
+Tout les téléphones sont supérieurs à 900px actuellement alors que tout les pc ne sont pas forcément a 1200 ( les vieux ordinateurs uniquement )
+J'aurais pu changer le CSS à partir du JS mais c'est pas éthique
+J'ai chercher dans les média queries et il me semblait qu'il y avait des formats type handheld et tout ça mais je n'ai pas réussi à les retrouver
+Si vous avez une réponse à m'apporter quand à la démarche à suivre, c'est avec plaisir.
+*/
+@media (max-width: 1200px) { 
+
+	.container{
+		width: auto;
+		flex-direction: column;
+	}
+	.container_2_main_box{
+		display: flex;
+		flex-direction: column;
+	}
+	.responsive_realisation{
+		display: flex;
+		flex-direction: column;
+	}
+	.inside_container_right{
+		width: auto;
+	}
+	.inside_container_left{
+		width: auto;
+	}
+	.line_h1{
+		margin-left: 20%;
+		margin-bottom: 2%;
+	}
+	.text {
+		font-family: 'Helvetica';
+		font-weight: lighter;
+		font-size: 2vmax;
+	}
+	p {
+		font-size: 2vmax;
+	}
+	h1{
+		font-size: 6vmax;
+		text-align: center;
+		margin-bottom: 1%;
+	}
+	h2{
+		font-size: 3.5vmax;
+	}
+	h3{
+		font-size: 4.5vmax;
+		text-align: center;
+		margin-bottom: 5%;	
+	}
+	h4{
+		font-size: 2.5vmax;
+	}
+}

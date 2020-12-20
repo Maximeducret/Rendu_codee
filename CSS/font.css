@@ -1,0 +1,29 @@
+    @font-face {
+    font-family: 'kiona regular';
+    src: url('../FONT/KIONA/Kiona-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+    @font-face {
+    font-family: 'kiona bold';
+    src: url('../FONT/KIONA/Kiona-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+    @font-face {
+    font-family: 'kiona semibold';
+    src: url('../FONT/KIONA/Kiona-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../FONT/HELVETICA/helvetica-light-587ebe5a59211.ttf') format('truetype');
+    }
